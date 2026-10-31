@@ -94,17 +94,17 @@ export default function App() {
   return (
     <div className="min-h-screen">
       {/* NAVBAR */}
-      <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-[#082b3a]/95 backdrop-blur-lg">
+      <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-#082b3a/95 backdrop-blur-lg">
         <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-10">
           <a href="#home" className="flex items-center gap-3 text-white">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#50d6d0]/60">
-              <Waves size={26} className="text-[#50d6d0]" />
+            <div className="flex h-11 w-11 items-center justify-center rounded-full border border-#50d6d0/60">
+              <Waves size={26} className="text-#50d6d0" />
             </div>
             <div>
-              <div className="text-lg font-bold tracking-[0.12em]">
+              <div className="text-lg font-bold tracking-0.12em">
                 CHAUNTRA
               </div>
-              <div className="text-[10px] tracking-[0.38em] text-[#50d6d0]">
+              <div className="text-[10px] tracking-[0.38em] text-#50d6d0">
                 AQUA ZONE
               </div>
             </div>
@@ -115,14 +115,14 @@ export default function App() {
               <a
                 key={name}
                 href={href}
-                className="text-sm text-white/75 transition hover:text-[#50d6d0]"
+                className="text-sm text-white/75 transition hover:text-#50d6d0"
               >
                 {name}
               </a>
             ))}
             <a
               href="#contact"
-              className="rounded-full bg-[#50d6d0] px-6 py-3 text-sm font-bold text-[#082b3a] transition hover:bg-white"
+              className="rounded-full bg-#50d6d0 px-6 py-3 text-sm font-bold text-#082b3a transition hover:bg-white"
             >
               Make an enquiry
               <ArrowUpRight className="ml-2 inline" size={16} />
@@ -140,7 +140,7 @@ export default function App() {
         </nav>
 
         {menuOpen && (
-          <div className="border-t border-white/10 bg-[#082b3a] p-5 md:hidden">
+          <div className="border-t border-white/10 bg-#082b3a p-5 md:hidden">
             {links.map(([name, href]) => (
               <a
                 key={name}
@@ -159,7 +159,7 @@ export default function App() {
         {/* HERO */}
         <section
           id="home"
-          className="relative flex min-h-[720px] items-center overflow-hidden bg-[#082b3a] pt-20"
+          className="relative flex min-h-720px items-center overflow-hidden bg-#082b3a pt-20"
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
@@ -168,19 +168,19 @@ export default function App() {
                 "url('https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=2000&q=90')",
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#082b3a] via-[#082b3a]/85 to-[#082b3a]/25" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#082b3a]/80 via-transparent to-[#082b3a]/20" />
+          <div className="absolute inset-0 bg-linear-to-r from-#082b3a via-#082b3a/85 to-#082b3a/25" />
+          <div className="absolute inset-0 bg-linear-to-t from-#082b3a/80 via-transparent to-#082b3a/20" />
 
           <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 px-5 py-24 lg:grid-cols-[1.2fr_0.8fr] lg:px-10">
             <div>
-              <p className="mb-7 flex items-center gap-3 text-xs font-bold tracking-[0.3em] text-[#50d6d0]">
-                <span className="h-px w-10 bg-[#50d6d0]" />
+              <p className="mb-7 flex items-center gap-3 text-xs font-bold tracking-[0.3em] text-#50d6d0">
+                <span className="h-px w-10 bg-#50d6d0" />
                 WELCOME TO CHAUNTRA AQUA ZONE
               </p>
 
               <h1 className="max-w-3xl font-display text-6xl leading-[1.12] text-white sm:text-7xl lg:text-8xl">
                 Discover the
-                <span className="block italic text-[#50d6d0]">joy of</span>
+                <span className="block italic text-#50d6d0">joy of</span>
                 swimming.
               </h1>
 
@@ -192,7 +192,7 @@ export default function App() {
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
                   href="#programs"
-                  className="rounded-full bg-[#50d6d0] px-7 py-4 font-bold text-[#082b3a] transition hover:bg-white"
+                  className="rounded-full bg-#50d6d0 px-7 py-4 font-bold text-#082b3a transition hover:bg-white"
                 >
                   Explore programs
                   <ArrowRight className="ml-3 inline" size={17} />
@@ -207,8 +207,8 @@ export default function App() {
             </div>
 
             <div className="hidden justify-end lg:flex">
-              <div className="max-w-xs border-l border-[#50d6d0] pl-7">
-                <Waves size={35} className="text-[#50d6d0]" />
+              <div className="max-w-xs border-l border-#50d6d0 pl-7">
+                <Waves size={35} className="text-#50d6d0" />
                 <p className="mt-6 font-display text-4xl leading-tight text-white">
                   Every stroke begins with a first step.
                 </p>
@@ -227,7 +227,7 @@ export default function App() {
               <p className="text-xs font-bold tracking-[0.3em] text-teal-600">
                 ABOUT OUR CLUB
               </p>
-              <h2 className="mt-5 font-display text-5xl leading-tight text-[#082b3a] sm:text-6xl">
+              <h2 className="mt-5 font-display text-5xl leading-tight text-#082b3a sm:text-6xl">
                 A refreshing way to build confidence.
               </h2>
               <p className="mt-7 leading-8 text-slate-600">
@@ -238,7 +238,7 @@ export default function App() {
               </p>
               <a
                 href="#contact"
-                className="mt-8 inline-flex items-center gap-3 font-bold text-teal-700 hover:text-[#082b3a]"
+                className="mt-8 inline-flex items-center gap-3 font-bold text-teal-700 hover:text-#082b3a"
               >
                 GET IN TOUCH <ArrowRight size={18} />
               </a>
@@ -248,11 +248,11 @@ export default function App() {
               <img
                 src="https://images.unsplash.com/photo-1560090995-01632a28895b?auto=format&fit=crop&w=1100&q=85"
                 alt="Beautiful blue swimming pool"
-                className="h-[420px] w-full rounded-2xl object-cover"
+                className="h-420px w-full rounded-2xl object-cover"
                 loading="lazy"
               />
-              <div className="absolute -bottom-6 left-5 rounded-xl bg-[#082b3a] p-6 text-white shadow-xl sm:left-10">
-                <Waves className="text-[#50d6d0]" size={30} />
+              <div className="absolute -bottom-6 left-5 rounded-xl bg-#082b3a p-6 text-white shadow-xl sm:left-10">
+                <Waves className="text-#50d6d0" size={30} />
                 <p className="mt-3 font-display text-2xl">
                   Learn. Practice. Progress.
                 </p>
@@ -262,14 +262,14 @@ export default function App() {
         </section>
 
         {/* PROGRAMS */}
-        <section id="programs" className="scroll-mt-20 bg-[#e9f7f6] px-5 py-24 lg:px-10">
+        <section id="programs" className="scroll-mt-20 bg-#e9f7f6 px-5 py-24 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
               <div>
                 <p className="text-xs font-bold tracking-[0.3em] text-teal-700">
                   OUR SWIMMING PROGRAMS
                 </p>
-                <h2 className="mt-4 font-display text-5xl text-[#082b3a] sm:text-6xl">
+                <h2 className="mt-4 font-display text-5xl text-#082b3a sm:text-6xl">
                   Find your rhythm.
                 </h2>
               </div>
@@ -300,7 +300,7 @@ export default function App() {
                     <p className="text-[10px] font-bold tracking-[0.2em] text-teal-700">
                       {item.subtitle}
                     </p>
-                    <h3 className="mt-3 font-display text-3xl text-[#082b3a]">
+                    <h3 className="mt-3 font-display text-3xl text-#082b3a">
                       {item.title}
                     </h3>
                     <p className="mt-4 min-h-16 text-sm leading-7 text-slate-600">
@@ -326,7 +326,7 @@ export default function App() {
               <p className="text-xs font-bold tracking-[0.3em] text-teal-700">
                 THE AQUA ZONE EXPERIENCE
               </p>
-              <h2 className="mt-4 font-display text-5xl text-[#082b3a]">
+              <h2 className="mt-4 font-display text-5xl text-#082b3a">
                 Learn with confidence.
               </h2>
             </div>
@@ -346,10 +346,10 @@ export default function App() {
         </section>
 
         {/* ENQUIRY */}
-        <section id="contact" className="scroll-mt-20 bg-[#082b3a] px-5 py-24 lg:px-10">
+        <section id="contact" className="scroll-mt-20 bg-#082b3a px-5 py-24 lg:px-10">
           <div className="mx-auto grid max-w-7xl items-start gap-14 lg:grid-cols-2">
             <div className="text-white">
-              <p className="text-xs font-bold tracking-[0.3em] text-[#50d6d0]">
+              <p className="text-xs font-bold tracking-[0.3em] text-#50d6d0">
                 START YOUR JOURNEY
               </p>
               <h2 className="mt-5 font-display text-6xl leading-tight">
@@ -366,7 +366,7 @@ export default function App() {
                   'Ask about schedules and availability',
                 ].map((text) => (
                   <p key={text} className="flex items-center gap-3">
-                    <CheckCircle2 className="text-[#50d6d0]" size={19} />
+                    <CheckCircle2 className="text-#50d6d0" size={19} />
                     {text}
                   </p>
                 ))}
@@ -377,7 +377,7 @@ export default function App() {
               onSubmit={handleSubmit}
               className="rounded-2xl bg-white p-7 sm:p-9"
             >
-              <h3 className="font-display text-3xl text-[#082b3a]">
+              <h3 className="font-display text-3xl text-#082b3a">
                 Make an enquiry
               </h3>
               <p className="mt-2 text-sm text-slate-500">
@@ -441,7 +441,7 @@ export default function App() {
 
               <button
                 type="submit"
-                className="mt-6 w-full rounded-full bg-[#082b3a] px-5 py-4 font-bold text-white transition hover:bg-teal-700"
+                className="mt-6 w-full rounded-full bg-#082b3a px-5 py-4 font-bold text-white transition hover:bg-teal-700"
               >
                 Submit enquiry <ArrowRight className="ml-2 inline" size={18} />
               </button>
@@ -464,10 +464,10 @@ export default function App() {
       <footer className="bg-[#051f2b] px-5 py-10 text-white lg:px-10">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-7 md:flex-row md:items-center">
           <a href="#home" className="flex items-center gap-3">
-            <Waves size={30} className="text-[#50d6d0]" />
+            <Waves size={30} className="text-#50d6d0" />
             <div>
               <p className="font-bold tracking-widest">CHAUNTRA</p>
-              <p className="text-[10px] tracking-[0.35em] text-[#50d6d0]">
+              <p className="text-[10px] tracking-[0.35em] text-#50d6d0">
                 AQUA ZONE
               </p>
             </div>
